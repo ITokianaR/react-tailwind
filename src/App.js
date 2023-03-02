@@ -1,14 +1,15 @@
-import {Routes, Route, BrowserRouter, Outlet} from 'react-router-dom';
+import {Routes, Route, Outlet} from 'react-router-dom';
 import Home from './components/Home';
 import About from './components/About';
 import Navbar from './layouts/Navbar';
 import Login from './components/Login';
-import './index.css';
+import './index.scss';
 
 const WithNav = () => {
   return (
     <>
       <Navbar />
+             
       <Outlet />
     </>
     );
@@ -30,7 +31,7 @@ const App = () => {
 
         <Route  element={<WithNav />}>
           <Route path="/home" element={<Home />} /> 
-          <Route path="/about" element={<About />} />   
+          <Route path="/about" element={<About />} />
         </Route>
 
       </Routes>
