@@ -9,7 +9,7 @@ const WithNav = () => {
   return (
     <>
       <Navbar />
-             
+
       <Outlet />
     </>
     );
