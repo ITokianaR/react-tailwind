@@ -1,5 +1,4 @@
-import Navbar from "../layouts/Navbar"
-
+//Home page
 export default function Home() {
     return(
         <>
@@ -10,25 +9,44 @@ export default function Home() {
         
         <div className="container mx-auto py-0 px-10 mt-2 md:px-80 md:mx-auto"> 
         <div class="flex flex-col items-center bg-white border border-gray-200 rounded-lg shadow md:flex-row md:max-w-xl hover:bg-gray-100 dark:border-gray-700 dark:bg-white dark:hover:bg-white">
-            <img class="object-cover w-full rounded-t-lg h-96 md:h-auto md:w-96 md:rounded-none md:rounded-l-lg" src="https://cdn.dribbble.com/users/2317423/screenshots/14139417/apply_job_4x.jpg" alt=""/>
+            <img class="object-cover w-full rounded-t-lg h-96 md:h-auto md:w-96 md:rounded-none md:rounded-l-lg" src="http://unblast.com/wp-content/uploads/2020/05/Job-Interview-Illustration.jpg" alt=""/>
             <div class="flex flex-col justify-between p-2 leading-normal">
                 <h5 class="mx-auto mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-black">Job-IT</h5>
                 <p class="mb-3 justify-self-auto font-normal text-gray-700 dark:text-black">Job-IT is the right solution for the needs of your society in terms of young and promising talents.</p>
-                <p class="mb-5 font-normal text-gray-700 dark:text-black">We offer alternating contracts with a reasonable pricing.</p>
+                <p class="mb-5 font-normal text-gray-700 dark:text-black">Our platform can provide to you countless talented students.</p>
             </div>
         </div>
         </div>
 
-        <div className="container mx-auto py-2 px-10 mt-3.5 md:px-80 md:mx-auto"> 
+        <div className="container mx-auto py-5 px-10 mt-3.5 md:px-80 md:mx-auto"> 
         <div class="flex flex-col items-center bg-white border border-gray-200 rounded-lg shadow md:flex-row md:max-w-xl hover:bg-gray-100 dark:border-gray-700 dark:bg-white dark:hover:bg-white">
-            <img class="object-cover w-full rounded-t-lg h-96 md:h-auto md:w-96 md:rounded-none md:rounded-l-lg" src="https://cdn.dribbble.com/users/2317423/screenshots/14139417/apply_job_4x.jpg" alt=""/>
+            <img class="object-cover w-full rounded-t-lg h-96 md:h-auto md:w-96 md:rounded-none md:rounded-l-lg" src="http://unblast.com/wp-content/uploads/2020/05/Job-Hunting-Illustration.jpg" alt=""/>
             <div class="flex flex-col justify-between p-2 leading-normal">
                 <h5 class="mx-auto mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-black">Job-IT</h5>
-                <p class="mb-3 justify-self-auto font-normal text-gray-700 dark:text-black">Job-IT is the right solution for the needs of your society in terms of young and promising talents.</p>
                 <p class="mb-5 font-normal text-gray-700 dark:text-black">We offer alternating contracts with a reasonable pricing.</p>
+                <p class="mb-3 justify-self-auto font-normal text-gray-700 dark:text-black">Many future employees are waiting for you. Good hunting, sir !</p>
             </div>
         </div>
         </div>
+
+        <footer class="p-4 bg-white rounded-lg shadow md:flex md:items-center md:justify-between md:p-6 dark:bg-gray-800">
+            <span class="text-sm text-gray-500 sm:text-center dark:text-gray-400">© 2023 <a href="https://flowbite.com/" class="hover:underline">Flowbite™</a>. All Rights Reserved.
+            </span>
+            <ul class="flex flex-wrap items-center mt-3 text-sm text-gray-500 dark:text-gray-400 sm:mt-0">
+                <li>
+                    <a href="#" class="mr-4 hover:underline md:mr-6 ">About</a>
+                </li>
+                <li>
+                    <a href="#" class="mr-4 hover:underline md:mr-6">Privacy Policy</a>
+                </li>
+                <li>
+                    <a href="#" class="mr-4 hover:underline md:mr-6">Licensing</a>
+                </li>
+                <li>
+                    <a href="#" class="hover:underline">Contact</a>
+                </li>
+            </ul>
+        </footer>
 
         </>
     )

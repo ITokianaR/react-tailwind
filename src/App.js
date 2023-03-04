@@ -1,7 +1,8 @@
 import {Routes, Route, Outlet} from 'react-router-dom';
+import Navbar from './layouts/Navbar';
+import Footer from './layouts/Footer';
 import Home from './components/Home';
 import About from './components/About';
-import Navbar from './layouts/Navbar';
 import Login from './components/Login';
 import './index.scss';
 
