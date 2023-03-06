@@ -34,6 +34,7 @@ const App = () => {
         <Route  element={<WithNav />}>
           <Route path="/home" element={<Home />} /> 
           <Route path="/about" element={<About />} />
+          <Route path="/student" element={<Student />} />
         </Route>
 
       </Routes>
