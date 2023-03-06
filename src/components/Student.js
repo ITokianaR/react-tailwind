@@ -1,9 +1,12 @@
+import Footer from "../layouts/Footer"
+
 export default function Student() {
     return(
-        <div class="dark:bg-black">
-            <div>
-            <h1 class="dark:text-white"> Hello World (still in development phase) </h1>
+        <div class=" dark:bg-black">
+            <div className="container mx-auto py-5 px-80">
+                <h1 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">List of students</h1>
             </div>
+            <Footer/>
         </div>
     )
 }
