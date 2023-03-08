@@ -5,7 +5,7 @@ import Student from './components/Student';
 import Profile from './components/Profile'
 import About from './components/About';
 import Login from './components/Login';
-import StudentDetails from './components/StudentDetails';
+import Details from './components/StudentDetails';
 import './index.scss';
 
 const WithNav = () => {
@@ -38,7 +38,7 @@ const App = () => {
           <Route path="/about" element={<About />} />
 
           <Route path="/student" element={<Student />} />
-          <Route path="/student/details" element={<StudentDetails />} />
+          <Route path="/student/details" element={<Details />} />
 
         </Route>
 
