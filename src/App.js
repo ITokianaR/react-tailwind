@@ -1,10 +1,11 @@
 import {Routes, Route, Outlet} from 'react-router-dom';
 import Navbar from './layouts/Navbar';
-import Footer from './layouts/Footer';
 import Home from './components/Home';
 import Student from './components/Student';
+import Profile from './components/Profile'
 import About from './components/About';
 import Login from './components/Login';
+import StudentDetails from './components/StudentDetails';
 import './index.scss';
 
 const WithNav = () => {
@@ -33,8 +34,12 @@ const App = () => {
 
         <Route  element={<WithNav />}>
           <Route path="/home" element={<Home />} /> 
+          <Route path="/profile" element={<Profile />} /> 
           <Route path="/about" element={<About />} />
+
           <Route path="/student" element={<Student />} />
+          <Route path="/student/details" element={<StudentDetails />} />
+
         </Route>
 
       </Routes>
