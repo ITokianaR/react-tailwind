@@ -4,7 +4,7 @@ export default function About() {
     return(
         <div class="dark:bg-black">
            <div className="container mx-auto py-5 px-80">
-                <h1 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">About us</h1>
+                <h1 class="mb-2 text-2xl font-bold tracking-tight text-center text-gray-900 dark:text-white">About us</h1>
             </div>
 
             <div className="container mx-auto py-0 px-10 mt-2 md:px-80 md:mx-auto"> 
