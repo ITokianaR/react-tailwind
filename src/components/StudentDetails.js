@@ -1,20 +1,20 @@
 import Footer from "../layouts/Footer";
-import Itokiana from "../assets/itokiana.jpg";
 
 import axios from 'axios';
 import {useState, useEffect} from 'react';
 import {Link, useParams} from 'react-router-dom';
 
 export default function Details() {
-    const{id} = useParams()
-    const [character, setCharacters] = useState([])
+    const { id } = useParams()
+    const [character, setCharacters] = useState({})
 
     useEffect(() => {
         axios.get(`https://rickandmortyapi.com/api/character/${id}`).then((res) => {
             setCharacters(res.data)
             console.log(res)
-        }, [id])
-    })
+        });
+    }, [id]);
+   
     return(
         <div class="dark:bg-black">
          <div className="container mx-auto py-2 px-80">

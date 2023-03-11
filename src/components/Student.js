@@ -11,8 +11,9 @@ export default function Student() {
         axios.get(`https://rickandmortyapi.com/api/character/?page=2`).then((res) => {
             setCharacters(res.data.results)
             console.log(res)
-        }, [])
-    })
+        });
+    }, ['https://rickandmortyapi.com/api/character/?page=2']);
+    
     return(
         <div class=" dark:bg-black">
             <div className="container mx-auto py-5 px-80">
