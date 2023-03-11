@@ -85,11 +85,11 @@ export default function Student() {
                 nextLabel={'>'}
                 pageCount={20}
                 onPageChange={changePage}
-                containerClassName={'flex pt-4 pb-2 space-x-2 justify-center items-center'}
-                previousLinkClassName={'px-2 py-1 bg-gray-200 hover:bg-gray-300 rounded-md cursor-pointer dark:text-white'}
+                containerClassName={'flex pt-4 pb-2 space-x-2 justify-center items-center text-gray-900 dark:text-white'}
+                previousLinkClassName={'px-2 py-1 bg-gray-200 hover:bg-gray-300 rounded-md cursor-pointer'}
                 nextLinkClassName={'px-2 py-1 bg-gray-200 hover:bg-gray-300 rounded-md cursor-pointer'}
                 disabledClassName={'opacity-50 cursor-not-allowed'}
-                activeClassName={'bg-blue-500 text-white px-2 py-1 rounded-md cursor-pointer'}
+                activeClassName={'bg-blue-500 text-white dark:text-black px-2 py-1 rounded-md cursor-pointer'}
             />
         </div>
 
