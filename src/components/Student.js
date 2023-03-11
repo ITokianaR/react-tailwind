@@ -2,18 +2,25 @@ import { Link, useParams } from 'react-router-dom'
 import { useState,useEffect } from "react";
 import axios from "axios"
 import Footer from "../layouts/Footer"
-
+import ReactPaginate from 'react-paginate';
 
 export default function Student() {
     const [characters, setCharacters] = useState([])
+    const [pageNumber, setPageNumber] = useState(0);
+    const charactersPerPage = 4;
+    const pagesVisited = pageNumber * charactersPerPage;
+
+    const changePage = ({ selected }) => {
+        setPageNumber(selected);
+    };
 
     useEffect(() => {
-        axios.get(`https://rickandmortyapi.com/api/character/?page=2`).then((res) => {
-            setCharacters(res.data.results)
-            console.log(res)
+        axios.get(`https://rickandmortyapi.com/api/character/?page=${pageNumber+1}`).then((res) => {
+          setCharacters(res.data.results)
+          console.log(res)
         });
-    }, ['https://rickandmortyapi.com/api/character/?page=2']);
-    
+      }, [pageNumber]);      
+
     return(
         <div class=" dark:bg-black">
             <div className="container mx-auto py-5 px-80">
@@ -71,6 +78,19 @@ export default function Student() {
         )
             })}
         
+        </div>
+        <div className="flex justify-center">
+            <ReactPaginate
+                previousLabel={'<'}
+                nextLabel={'>'}
+                pageCount={20}
+                onPageChange={changePage}
+                containerClassName={'flex pt-4 pb-2 space-x-2 justify-center items-center'}
+                previousLinkClassName={'px-2 py-1 bg-gray-200 hover:bg-gray-300 rounded-md cursor-pointer dark:text-white'}
+                nextLinkClassName={'px-2 py-1 bg-gray-200 hover:bg-gray-300 rounded-md cursor-pointer'}
+                disabledClassName={'opacity-50 cursor-not-allowed'}
+                activeClassName={'bg-blue-500 text-white px-2 py-1 rounded-md cursor-pointer'}
+            />
         </div>
 
         <Footer/>
