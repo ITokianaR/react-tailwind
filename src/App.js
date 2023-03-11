@@ -1,4 +1,4 @@
-import {Routes, Route, Outlet} from 'react-router-dom';
+import {Routes, Route, Outlet, useParams} from 'react-router-dom';
 import Navbar from './layouts/Navbar';
 import Home from './components/Home';
 import Student from './components/Student';
@@ -38,7 +38,7 @@ const App = () => {
           <Route path="/about" element={<About />} />
           
           <Route path="/student" element={<Student />} />
-          <Route path="/student/details" element={<Details />} />
+          <Route path="/student/details/:id" element={<Details />} />
 
         </Route>
 
