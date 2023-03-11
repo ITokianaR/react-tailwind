@@ -30,7 +30,7 @@ export default function Details() {
                 <img class="p-4 w-36 h-36 mb-3 rounded-full" src={character.image} alt=""/>
                 <div class="flex flex-col justify-between p-4 leading-normal">
                     <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">{character.name}</h5>
-                    <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">RAMANANKIRAHINA</h5>
+                    <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">{character.gender}</h5>
                     <p class="font-normal text-gray-700 dark:text-gray-400">{character.species}</p>
                 </div>
             </div>
