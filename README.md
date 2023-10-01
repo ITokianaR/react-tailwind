@@ -2,6 +2,8 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+You can now view the project on [react-tailwind])(https://react-tailwind-steel.vercel.app/student)
+
 ## Available Scripts
 
 In the project directory, you can run:
